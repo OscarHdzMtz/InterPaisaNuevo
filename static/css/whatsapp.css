@@ -90,7 +90,7 @@ span.my-number {
 .blanter-msg {
     color: #444;
     padding: 20px;
-    font-size: 12.5px;
+    font-size: 15.5px;
     text-align: center;
     border-top: 1px solid #ddd;
 }
@@ -103,12 +103,12 @@ textarea#chat-input {
     resize: none;
 }
 a#send-it {
-    color: #555;
-    width: 40px;
+    color: white;
+    width: 70px;
     margin: -5px 0 0 5px;
     font-weight: 700;
     padding: 8px;
-    background: #eee;
+    background: #095e54;
     border-radius: 10px;
 }
 .first-msg {
@@ -156,6 +156,15 @@ a.close-chat {
         left: 5%;
         right: 5%;
         font-size: 80%;
+    }
+    a#send-it {
+        color: white;
+        width: 80px;
+        margin: -5px 45px 0 5px;
+        font-weight: 750;
+        padding: 8px;
+        background: #095e54;
+        border-radius: 10px;
     }
 }
 .hide {
