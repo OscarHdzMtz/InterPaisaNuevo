@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html><span title="Spanish"><a lang="es" href="qa-html-language-declarations.es"></a></span>
 <html lang="es">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,13 +17,14 @@
     <link href="static\plugin\owl-carousel\css\owl.carousel.min.css" rel="stylesheet">
     <link href="static\plugin\magnific\magnific-popup.css" rel="stylesheet">
     <link href="static\css\style.css" rel="stylesheet">
+    <link href="static\css\whatsapp.css" rel="stylesheet">
     <link href="static\css\btn_flot.css" rel="stylesheet">
     <link href="static\css\color\default.css" rel="stylesheet" id="color_theme">
     <link rel="stylesheet" href="static\icomoon/style.css">
-  </head>
+</head>
 
-  <body data-spy="scroll" data-target="#navbar" data-offset="98">
-  <!-- 
+<body data-spy="scroll" data-target="#navbar" data-offset="98">
+    <!-- 
   ======================================================
   creado por     : ISC.OHM
   situs       : InterPaisa
@@ -31,89 +33,96 @@
   -->
     $(if chap-id)
     <form name="sendin" action="$(link-login-only)" method="post">
-      <input type="hidden" name="username" />
-      <input type="hidden" name="password" />
-      <input type="hidden" name="dst" value="$(link-orig)" />
-      <input type="hidden" name="popup" value="true" />
+        <input type="hidden" name="username" />
+        <input type="hidden" name="password" />
+        <input type="hidden" name="dst" value="$(link-orig)" />
+        <input type="hidden" name="popup" value="true" />
     </form>
     <script type="text/javascript" src="/md5.js"></script>
     <script type="text/javascript">
-    <!--
-        function doLogin() {
-      document.sendin.username.value = document.login.username.value;
-      document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
-      document.sendin.submit();
-      return false;
-        }
+    < !--
+            function doLogin() {
+                document.sendin.username.value = document.login.username.value;
+                document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+                document.sendin.submit();
+                return false;
+            }
     //-->
     </script>
     $(endif)
 
 
     <div id="loading">
-      <div class="load-circle"><span class="one"></span></div>
+        <div class="load-circle"><span class="one"></span></div>
     </div>
     <header>
-    
+
     </header>
     <main>
-      <section id="home" class="home-banner-03 theme-bg bg-effect-box">
-        <div class="bg-effect bg-cover" style="background-image: url(static/img/banner-effect-6.svg);"></div>
-        <div id="particles_effect" class="particles-effect"></div>
-        <div class="container">
-          <div class="row align-items-center justify-content-center p-100px-tb sm-p-60px-b">
-            <div class="col-lg-5 md-p-30px-tb">
-              <h5 class="white-color">Facebook</h5>
-              <h1 style="text-align: center;" class="font-alt white-color">BIENVENIDOS A</h1>
-              <h2 style="text-align: center;" class="white-color-light">Interpaisa</h2>
-              <div class="subscribe-block">
-                  <div class="card-block py-lg px-md">
-                    <form id="loginForm" class="md-form form-light" role="form" action="$(link-login-only)" method="post">
-                        <input type="hidden" name="dst" value="$(link-orig)"/>
-                        <input type="hidden" name="popup" value="true"/>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="inputUser" class="form-label">Usuario</label>
-                            <div class="md-form-line-wrap">
-                              <input id="inputUser" type="text" name="username" placeholder="Usuario" class="form-control" autofocus required>
+        <section id="home" class="home-banner-03 theme-bg bg-effect-box">
+            <div class="bg-effect bg-cover" style="background-image: url(static/img/banner-effect-6.svg);"></div>
+            <div id="particles_effect" class="particles-effect"></div>
+            <div class="container">
+                <div class="row align-items-center justify-content-center p-100px-tb sm-p-60px-b">
+                    <div class="col-lg-5 md-p-30px-tb">
+                        <h5 class="white-color">Facebook</h5>
+                        <h1 style="text-align: center;" class="font-alt white-color">BIENVENIDOS A</h1>
+                        <h2 style="text-align: center;" class="white-color-light">Interpaisa</h2>
+                        <div class="subscribe-block">
+                            <div class="card-block py-lg px-md">
+                                <form id="loginForm" class="md-form form-light" role="form" action="$(link-login-only)"
+                                    method="post">
+                                    <input type="hidden" name="dst" value="$(link-orig)" />
+                                    <input type="hidden" name="popup" value="true" />
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="inputUser" class="form-label">Usuario</label>
+                                                <div class="md-form-line-wrap">
+                                                    <input id="inputUser" type="text" name="username"
+                                                        placeholder="Usuario" class="form-control" autofocus required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="inputPassword" class="form-label">Contraseña</label>
+                                                <div class="md-form-line-wrap">
+                                                    <input id="inputPassword" type="password" name="password"
+                                                        placeholder="Contraseña" class="form-control" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                $(if error)
+                                                <p>
+                                                    <font style="color: #ffffffe8">Ocurrio un error: </font>$(error)
+                                                </p>
+                                                $(endif)
+                                            </div>
+                                        </div></br>
+                                        <div class="col-md-12">
+                                            <button type="submit" class="btn btn-block btn-light"><span
+                                                    class="btn-elem-wrap"><span class="text"
+                                                        style="color: darkblue">LOGIN</span></span></button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                          </div>
+                            <!-- <label>Powered by MikroTik RouterOS</label> -->
                         </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="inputPassword" class="form-label">Contraseña</label>
-                            <div class="md-form-line-wrap">
-                              <input id="inputPassword" type="password" name="password" placeholder="Contraseña" class="form-control" required>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            $(if error)
-                              <p><font style="color: #ffffffe8">Ocurrio un error: </font>$(error)</p>
-                            $(endif)
-                          </div>
-                        </div></br>
-                        <div class="col-md-12">
-                            <button type="submit" class="btn btn-block btn-light"><span class="btn-elem-wrap"><span class="text" style="color: darkblue">LOGIN</span></span></button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                <!-- <label>Powered by MikroTik RouterOS</label> -->
-              </div>
-            </div> 
-            <div align="center" class="col-lg-7 text-center p-50px-l">
-              <!-- <img src="static\img\home-banner-7.svg" title="" alt=""> -->
-              <img src="static/img/home-banner.png" title="" alt="">
+                    </div>
+                    <div align="center" class="col-lg-7 text-center p-50px-l">
+                        <!-- <img src="static\img\home-banner-7.svg" title="" alt=""> -->
+                        <img src="static/img/home-banner.png" title="" alt="">
+                    </div>
+                </div>
             </div>
-          </div> 
-        </div>
-      </section>
+        </section>
 
-      <section id="service" class="section">
-    <!--     <div class="container">
+        <section id="service" class="section">
+            <!--     <div class="container">
           <div class="row m-45px-b sm-m-25px-b">
             <div class="col-lg-5 col-md-10">
               <div class="section-title-01">
@@ -121,61 +130,52 @@
               </div>
             </div>
           </div> -->
-          
+
             <div class="row">
-              <div class="col-lg-4 col-md-6 m-15px-tb">
-                <div class="feature-box-02 text-center">
-                  <div class="icon theme-after">                    
-                    <i class="icon-signal theme-bg"></i>
-                  </div>
-                  <div class="feature-content">
-                    <h5 class="font-alt dark-color">Internet Gratis</h5>
-                    <p>Para probar el servicio por 8 minutos, haga clic en el boton.</p>
-                  </div>
-                  <button style="background-color: #1973e9; color: white;" type="button"
-                  class="btn btn-warning" data-toggle="modal"
-                  data-target="#confirm">
-                  Probar
-              </button>
+                <div class="col-lg-4 col-md-6 m-15px-tb">
+                    <div class="feature-box-02 text-center">
+                        <div class="icon theme-after">
+                            <i class="icon-signal theme-bg"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h5 class="font-alt dark-color">Internet Gratis</h5>
+                            <p>Para probar el servicio por 8 minutos, haga clic en el boton.</p>
+                        </div>
+                        <button style="background-color: #1973e9; color: white;" type="button" class="btn btn-warning"
+                            data-toggle="modal" data-target="#confirm">
+                            Probar
+                        </button>
+                    </div>
                 </div>
-              </div> 
-                   <!--modal de confirmacion de gratis  -->
-                   <div>
-                    <div class="modal fade" id="confirm" tabindex="-1"
-                        role="dialog" aria-labelledby="exampleModalLabel"
+                <!--modal de confirmacion de gratis  -->
+                <div>
+                    <div class="modal fade" id="confirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h4 style="text-align: center"
-                                        class="modal-title" id="confirm">
+                                    <h4 style="text-align: center" class="modal-title" id="confirm">
                                         <strong>PATROCINADO POR
                                             INTERPAISA</strong>
                                     </h4>
-                                    <button type="button" class="close"
-                                        data-dismiss="modal"
-                                        aria-label="Close">
-                                        <span
-                                            aria-hidden="true">&times;</span>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
-                                <div style="text-align:center"
-                                    class="modal-body">
+                                <div style="text-align:center" class="modal-body">
                                     <div align="center">
-                                        <img src="static/img/Success.png"
-                                            style="padding-bottom: 20px;">
+                                        <img src="static/img/Success.png" style="padding-bottom: 20px;">
                                         <BR></BR>
                                     </div>
                                     <h4> <strong>!Disfrute de sus 8 minutos
                                             gratis!</strong> </h4>
                                     <p>Pasando los 8 minutos podra volver
                                         <br> a conectarse <strong>GRATIS</strong> hasta despues de 1
-                                        dia</p>
-                                    <div
-                                        style="color: black; font-size: 12px;">
+                                        dia
+                                    </p>
+                                    <div style="color: black; font-size: 12px;">
                                         Visitanos en nuestra pagina de
-                                        facebook <a
-                                            href="">InterPaisaWisp</a></div>
+                                        facebook <a href="">InterPaisaWisp</a></div>
                                     <br><br>
 
                                 </div>
@@ -193,498 +193,547 @@
                 </div>
                 <!-- din del modal de confirmacion -->
 
-              <div class="col-lg-4 col-md-6 m-15px-tb">
-                <div class="feature-box-02 text-center">
-                  <div class="icon theme-after">
-                    <i class="icon-shop theme-bg"></i>
-                  </div>
-                  <div class="feature-content">
-                    <h5 class="font-alt dark-color">Compra aqui tu ficha</h5>
-                    <p>COmpra tu ficha en cualquira de estos lugares</p>
-                  </div>
-                  <a class="link yellow-bg-after" data-toggle="modal"
-                  data-target="#compra"><i class="yellow-bg ti-arrow-right"></i></a>
+                <div class="col-lg-4 col-md-6 m-15px-tb">
+                    <div class="feature-box-02 text-center">
+                        <div class="icon theme-after">
+                            <i class="icon-shop theme-bg"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h5 class="font-alt dark-color">Compra aqui tu ficha</h5>
+                            <p>COmpra tu ficha en cualquira de estos lugares</p>
+                        </div>
+                        <a class="link yellow-bg-after" data-toggle="modal" data-target="#compra"><i
+                                class="yellow-bg ti-arrow-right"></i></a>
+                    </div>
                 </div>
-              </div> 
 
-              <div class="col-lg-4 col-md-6 m-15px-tb">
-                <div class="feature-box-02 text-center">
-                  <div class="icon theme-after">
-                    <i class="icon-home theme-bg"></i>
-                  </div>
-                  <div class="feature-content">
-                    <h5 class="font-alt dark-color">Internet Residencial para casa</h5>
-                    <p>Contrata con nosotros internet para tu casa</p>
-                  </div>
-                  <a class="link yellow-bg-after" href="#contact"><i class="yellow-bg ti-arrow-right"></i></a>
+                <div class="col-lg-4 col-md-6 m-15px-tb">
+                    <div class="feature-box-02 text-center">
+                        <div class="icon theme-after">
+                            <i class="icon-home theme-bg"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h5 class="font-alt dark-color">Internet Residencial para casa</h5>
+                            <p>Contrata con nosotros internet para tu casa</p>
+                        </div>
+                        <a class="link yellow-bg-after" href="#contact"><i class="yellow-bg ti-arrow-right"></i></a>
+                    </div>
                 </div>
-              </div> 
 
-              </div> 
-            </div> 
-        </div>
-      </section>
+            </div>
+            </div>
+            </div>
+        </section>
 
 
 
     </main>
     <footer class="footer footer-dark">
-      <div class="footer-copy">
-        <div class="row">
-          <div class="col-12">
-            <p>ISC.OHM©InterPaisa todos los derechos reservados.</p>
-          </div>
-        </div> 
-      </div>
+        <div class="footer-copy">
+            <div class="row">
+                <div class="col-12">
+                    <p>ISC.OHM©InterPaisa todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
     </footer>
     <section>
-          <!-- BOTON FLOTANTE -->
-    <div class="efect">
-      <div class="container-icons">
-          <div>
-              <button type="button" class="btn btn-link" data-toggle="modal" data-target="#precios">
-                  <div class="row-icon icon1">
-                      <h4>Precios</h4><label class="icon-ticket label1"></label>
-                  </div>
-              </button>
-          </div>
-          <!-- <a href=""> -->
-          <div>
-              <button type="button" class="btn btn-link" data-toggle="modal" data-target="#trabajemos">
-                  <div class="row-icon icon2">
-                      <h4>Trabajemos</h4><label class="icon-tumblr-with-circle label2"></label>
+        <!-- BOTON FLOTANTE -->
+        <div class="efect">
+            <div class="container-icons">
+                <div>
+                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#precios">
+                        <div class="row-icon icon1">
+                            <h4>Precios</h4><label class="icon-ticket label1"></label>
+                        </div>
+                    </button>
+                </div>
+                <!-- <a href=""> -->
+                <div>
+                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#trabajemos">
+                        <div class="row-icon icon2">
+                            <h4>Trabajemos</h4><label class="icon-tumblr-with-circle label2"></label>
 
-                  </div>
-                  <!-- </a> -->
-              </button>
-          </div>
+                        </div>
+                        <!-- </a> -->
+                    </button>
+                </div>
 
-          <div>
-              <button type="button" class="btn btn-link" data-toggle="modal" data-target="#compra">
-                  <!-- <a href=""> -->
-                  <div class="row-icon icon3">
-                      <h4>CompraAqui</h4><label class="icon-arrow-with-circle-down label3"></label>
-                  </div>
-                  <!-- </a> -->
-              </button>
-          </div>
+                <div>
+                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#compra">
+                        <!-- <a href=""> -->
+                        <div class="row-icon icon3">
+                            <h4>CompraAqui</h4><label class="icon-arrow-with-circle-down label3"></label>
+                        </div>
+                        <!-- </a> -->
+                    </button>
+                </div>
 
-          <div>
-              <button type="button" class="btn btn-link" data-toggle="modal" data-target="#nosotros">
-                  <!-- <a href=""> -->
-                  <div class="row-icon icon4">
-                      <h4>Nosotros</h4><label class="icon-info-with-circle label4"></label>
-                  </div>
-                  <!-- </a> -->
-              </button>
-          </div>
+                <div>
+                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#nosotros">
+                        <!-- <a href=""> -->
+                        <div class="row-icon icon4">
+                            <h4>Nosotros</h4><label class="icon-info-with-circle label4"></label>
+                        </div>
+                        <!-- </a> -->
+                    </button>
+                </div>
 
-        
 
-          <h2 class="icon-circle-with-plus"></h2>
-      </div>
-  </div>
 
-  <!-- MODAL DE PRECIOS -->
-  <div>
-      <div class="modal fade" id="precios" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h3 style="text-align: center" class="modal-title" id="exampleModalLabel">
-                          <strong>NUESTROS PRECIOS</strong>
-                      </h3>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                      </button>
-                  </div>
-                  <div class="modal-body">
-                      <p style="text-align: center; font-size: 13">Conoce nuestros precios de acuerdo a su lugar de
-                          residencia, <br> dando click en una de los siguentes botones</p>
-                      <p>
-                          <!-- <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a> -->
-                          <!-- <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample">Toggle second element</button> -->
-                          <button style="background-color: #22be5b;" class="btn btn-success btn-block" type="button"
-                              data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false"
-                              aria-controls="multiCollapseExample1"><strong>San Cristobal Amatlan</strong></button>
-                      </p>
-                      <div class="row">
-                          <div class="col">
-                              <div class="collapse multi-collapse" id="multiCollapseExample1">
-                                  <div class="card card-body">
-                                      <table class="table">
-                                          <thead class="thead-dark">
-                                              <tr>
-                                                  <th scope="col">#</th>
-                                                  <th style="color: green;" scope="col">Plan T/Corrido
-                                                  </th>
-                                                  <th style="color: green;" scope="col">Precio</th>
+                <h2 class="icon-circle-with-plus"></h2>
+            </div>
+        </div>
 
-                                              </tr>
-                                          </thead>
-                                          <tbody>
-                                              <tr>
-                                                  <th scope="row">1</th>
-                                                  <td><strong>Ficha de 30 Min</strong></td>
-                                                  <td>$3 Pesos</td>
-                                              </tr>
-                                              <tr>
-                                                  <th scope="row">2</th>
-                                                  <td><strong>Ficha de 1 Hora</strong></td>
-                                                  <td>$ 5 Pesos</td>
-                                              </tr>
-                                              <tr>
-                                                  <th scope="row">3</th>
-                                                  <td><strong>Ficha de 3 Hora</strong></td>
-                                                  <td>$ 12 Pesos</td>
-                                              </tr>                                                
-                                              <tr>
-                                                  <th scope="row">4</th>
-                                                  <td><strong>Ficha de 1 Dia</strong></td>
-                                                  <td>$ 20 Pesos</td>
-                                              </tr>
-                                              <tr>
-                                                  <th scope="row">5</th>
-                                                  <td><strong>Ficha de 1 Semana</strong></td>
-                                                  <td>$ 50 Pesos</td>
-                                              </tr>
-                                              <tr>
-                                                  <th scope="row">6</th>
-                                                  <td><strong>Ficha de 1 Mes</strong></td>
-                                                  <td>$ Contactanos</td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <p>
-                          <a style="background-color: #22be5b" class="btn btn-success btn-block"
-                              data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-                              aria-controls="collapseExample">
-                              <strong>San Agustin Mixtepec</strong>
-                          </a>
-                      </p>
-                      <div class="collapse" id="collapseExample">
-                          <div class="card card-body">
-                              <table class="table">
-                                  <thead class="thead-dark">
-                                      <tr>
-                                          <th scope="col">#</th>
-                                          <th style="color: green;" scope="col">Plan T/Corrido
-                                          </th>
-                                          <th style="color: green;" scope="col">Precio</th>
+        <!-- MODAL DE PRECIOS -->
+        <div>
+            <div class="modal fade" id="precios" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 style="text-align: center" class="modal-title" id="exampleModalLabel">
+                                <strong>NUESTROS PRECIOS</strong>
+                            </h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p style="text-align: center; font-size: 13">Conoce nuestros precios de acuerdo a su lugar
+                                de
+                                residencia, <br> dando click en una de los siguentes botones</p>
+                            <p>
+                                <!-- <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a> -->
+                                <!-- <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample">Toggle second element</button> -->
+                                <button style="background-color: #22be5b;" class="btn btn-success btn-block"
+                                    type="button" data-toggle="collapse" data-target=".multi-collapse"
+                                    aria-expanded="false" aria-controls="multiCollapseExample1"><strong>San Cristobal
+                                        Amatlan</strong></button>
+                            </p>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                        <div class="card card-body">
+                                            <table class="table">
+                                                <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th style="color: green;" scope="col">Plan T/Corrido
+                                                        </th>
+                                                        <th style="color: green;" scope="col">Precio</th>
 
-                                      </tr>
-                                  </thead>
-                                  <tbody>
-                                      <tr>
-                                          <th scope="row">1</th>
-                                          <td><strong>Ficha de 30 Min</strong></td>
-                                          <td>$5 Pesos</td>
-                                      </tr>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td><strong>Ficha de 30 Min</strong></td>
+                                                        <td>$3 Pesos</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td><strong>Ficha de 1 Hora</strong></td>
+                                                        <td>$ 5 Pesos</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td><strong>Ficha de 3 Hora</strong></td>
+                                                        <td>$ 12 Pesos</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td><strong>Ficha de 1 Dia</strong></td>
+                                                        <td>$ 20 Pesos</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">5</th>
+                                                        <td><strong>Ficha de 1 Semana</strong></td>
+                                                        <td>$ 50 Pesos</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">6</th>
+                                                        <td><strong>Ficha de 1 Mes</strong></td>
+                                                        <td>$ Contactanos</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                <a style="background-color: #22be5b" class="btn btn-success btn-block"
+                                    data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    <strong>San Agustin Mixtepec</strong>
+                                </a>
+                            </p>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    <table class="table">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th style="color: green;" scope="col">Plan T/Corrido
+                                                </th>
+                                                <th style="color: green;" scope="col">Precio</th>
 
-                                      <tr>
-                                          <th scope="row">2</th>
-                                          <td><strong>Ficha de 1 Hora</strong></td>
-                                          <td>$8 Pesos</td>
-                                      </tr>
-                                      
-                                      <tr>
-                                          <th scope="row">3</th>
-                                          <td><strong>Ficha de 3 Hora</strong></td>
-                                          <td>$15 Pesos</td>
-                                      </tr>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td><strong>Ficha de 30 Min</strong></td>
+                                                <td>$5 Pesos</td>
+                                            </tr>
 
-                                      <tr>
-                                          <th scope="row">4</th>
-                                          <td><strong>Ficha de 1 Dia</strong></td>
-                                          <td>$25 Pesos</td>
-                                      </tr>
-                                      
-                                      <tr>
-                                          <th scope="row">5</th>
-                                          <td><strong>Ficha de 1 Semana</strong></td>
-                                          <td>$70 Pesos</td>
-                                      </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td><strong>Ficha de 1 Hora</strong></td>
+                                                <td>$8 Pesos</td>
+                                            </tr>
 
-                                      <tr>
-                                          <th scope="row">6</th>
-                                          <td><strong>Ficha de 1 Mes</strong></td>
-                                          <td>$ Contactanos</td>
-                                      </tr>
-                                  </tbody>
-                              </table>
-                          </div>
-                      </div>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td><strong>Ficha de 3 Hora</strong></td>
+                                                <td>$15 Pesos</td>
+                                            </tr>
 
-                  </div>
-                  <div class="modal-footer">
-                      <button style="background-color: #e94234;" type="button" class="btn btn-danger"
-                          data-dismiss="modal">CERRAR</button>
-                      <!--  <button type="button" class="btn btn-primary">Save
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td><strong>Ficha de 1 Dia</strong></td>
+                                                <td>$25 Pesos</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td><strong>Ficha de 1 Semana</strong></td>
+                                                <td>$70 Pesos</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td><strong>Ficha de 1 Mes</strong></td>
+                                                <td>$ Contactanos</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button style="background-color: #e94234;" type="button" class="btn btn-danger"
+                                data-dismiss="modal">CERRAR</button>
+                            <!--  <button type="button" class="btn btn-primary">Save
                       changes</button> -->
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  <!-- MODAL TRABAJEMOS JUNTOS -->
-  <div>
-      <div class="modal fade" id="trabajemos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h3 style="text-align: center" class="modal-title" id="exampleModalLabel">
-                          <strong>¡TRABAJEMOS JUNTOS!</strong>
-                      </h3>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                      </button>
-                  </div>
-                  <div style="text-align:justify" class="modal-body">
-                      Tienes algun local comercial o vives cerca de alguna zona donde frecuenta la gente (Centro, Vecindad, Espacio Deportivo, etc.) <br>
-                      
-                      <br>
-                      Contactanos y hacemos un estudio de la zona, determinamos la factibilidad de operacion,
-                      instalamos un punto de acceso
-                      wifi por fichas y tu obtienes un porcentaje considerable de las utilidades.
-                  </div>
-                  <div align="center"><img src="/static/img/socio.png" style="padding-bottom: 20px;"></div>                    
+        <!-- MODAL TRABAJEMOS JUNTOS -->
+        <div>
+            <div class="modal fade" id="trabajemos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 style="text-align: center" class="modal-title" id="exampleModalLabel">
+                                <strong>¡TRABAJEMOS JUNTOS!</strong>
+                            </h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div style="text-align:justify" class="modal-body">
+                            Tienes algun local comercial o vives cerca de alguna zona donde frecuenta la gente (Centro,
+                            Vecindad, Espacio Deportivo, etc.) <br>
 
-                  <div class="modal-footer">
-                      <h4 style="text-align: center">
-                          <strong>CONTACTANOS</strong> <br>
-                      </h4>
-                      <div " align="center">
-                          <a style="color: green"  href=""><img src="img/whatsapp.png" alt=""><strong> 951 417 8801</strong></a>
-                      </div>
-                      <div align="center">
-                          <a href=""><img src="img/facebook.png" alt=""><strong> InterPaisaWisp</strong></a>
-                      </div>                     
-                  </div>
+                            <br>
+                            Contactanos y hacemos un estudio de la zona, determinamos la factibilidad de operacion,
+                            instalamos un punto de acceso
+                            wifi por fichas y tu obtienes un porcentaje considerable de las utilidades.
+                        </div>
+                        <div align="center"><img src="/static/img/socio.png" style="padding-bottom: 20px;"></div>
 
-                  <div class="modal-footer">
-                      <button style="background-color: #e94234;" type="button" class="btn btn-danger"
-                          data-dismiss="modal">CERRAR</button>
-                      <!--  <button type="button" class="btn btn-primary">Save
+                        <div class="modal-footer">
+                            <h4 style="text-align: center">
+                                <strong>CONTACTANOS</strong> <br>
+                            </h4>
+                            <div " align=" center">
+                                <a style="color: green" href=""><img src="img/whatsapp.png" alt=""><strong> 951 417
+                                        8801</strong></a>
+                            </div>
+                            <div align="center">
+                                <a href=""><img src="img/facebook.png" alt=""><strong> InterPaisaWisp</strong></a>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button style="background-color: #e94234;" type="button" class="btn btn-danger"
+                                data-dismiss="modal">CERRAR</button>
+                            <!--  <button type="button" class="btn btn-primary">Save
                           changes</button> -->
-                  </div>
-              </div>
-          </div>
-      </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-  </div>
+        </div>
 
-    <!-- MODAL DE NOSOTROS -->
-    <div>
-      <div class="modal fade" id="nosotros" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h3 style="text-align: center" class="modal-title" id="exampleModalLabel">
-                          <strong>InterPaisa</strong>
-                      </h3>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                      </button>
-                  </div>
-                  <div style="text-align:justify" class="modal-body">
-                      Somos un equipo 100% tobeño, dedicada a la venta de Internet por fichas, Internet residencial, 
-                      Internet para negocios, Enlaces Punto a Punto o Multipunto, Venta y Configuración de Equipos para WISP y equipos Hotspot para venta fichas,
-                       ofreciendo al publico servicio de conexion a internet de alta velocidad a bajo costo.
-                  </div>
-                      <div style="text-align:justify" class="modal-body"> 
-                          <h4>Nuestra Mision</h4>
-                          Brindar servicios de conectividad y soluciones tecnologicas de alta calidad con gran cobertura geografica.
-                              <br>
-                          <br>
-                          <h4>Nuestra Vision</h4>
-                          Ser una empresa con tecnologias de vanguardia ofreciendo al publico una amplia variedad de soluciones.
-                          <br><br>
-                          <h4>Nuestros Valores</h4>
-                          Honestidad, Seriedad, Calidad, Humildad, Integridad.
-                          <br><br>
-                          <h4>Nuestros Objetivos</h4>
-                          Brindar una conexión de internet estable, con velocidades competitivas y de la mejor calidad para la mejor experiencia del usuario
-                      </div>
-                      <div align="center">
-                          <img src="static/img/home-banner.png" alt="" width="160" height="140"><strong>
-                      </div> 
+        <!-- MODAL DE NOSOTROS -->
+        <div>
+            <div class="modal fade" id="nosotros" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 style="text-align: center" class="modal-title" id="exampleModalLabel">
+                                <strong>InterPaisa</strong>
+                            </h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div style="text-align:justify" class="modal-body">
+                            Somos un equipo 100% tobeño, dedicada a la venta de Internet por fichas, Internet
+                            residencial,
+                            Internet para negocios, Enlaces Punto a Punto o Multipunto, Venta y Configuración de Equipos
+                            para WISP y equipos Hotspot para venta fichas,
+                            ofreciendo al publico servicio de conexion a internet de alta velocidad a bajo costo.
+                        </div>
+                        <div style="text-align:justify" class="modal-body">
+                            <h4>Nuestra Mision</h4>
+                            Brindar servicios de conectividad y soluciones tecnologicas de alta calidad con gran
+                            cobertura geografica.
+                            <br>
+                            <br>
+                            <h4>Nuestra Vision</h4>
+                            Ser una empresa con tecnologias de vanguardia ofreciendo al publico una amplia variedad de
+                            soluciones.
+                            <br><br>
+                            <h4>Nuestros Valores</h4>
+                            Honestidad, Seriedad, Calidad, Humildad, Integridad.
+                            <br><br>
+                            <h4>Nuestros Objetivos</h4>
+                            Brindar una conexión de internet estable, con velocidades competitivas y de la mejor calidad
+                            para la mejor experiencia del usuario
+                        </div>
+                        <div align="center">
+                            <img src="static/img/home-banner.png" alt="" width="160" height="140"><strong>
+                        </div>
 
-                  <div class="modal-footer">
-                      <button style="background-color: #e94234;" type="button" class="btn btn-danger"
-                          data-dismiss="modal">CERRAR</button>
-                      <!--  <button type="button" class="btn btn-primary">Save
+                        <div class="modal-footer">
+                            <button style="background-color: #e94234;" type="button" class="btn btn-danger"
+                                data-dismiss="modal">CERRAR</button>
+                            <!--  <button type="button" class="btn btn-primary">Save
                       changes</button> -->
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-               <!-- MODAL PUNTOS DE VENTA -->
-               <div class="modal fade" id="compra" tabindex="-1"
-               role="dialog" aria-labelledby="exampleModalLabel"
-               aria-hidden="true">
-               <div class="modal-dialog" role="document">
-                   <div class="modal-content">
-                       <div class="modal-header">
-                           <h3 style="text-align:center; color: black"
-                               class="modal-title" id="exampleModalLabel">
-                               <strong>PUNTOS DE VENTA</strong>
-                           </h3>
-                           <button type="button" class="close"
-                               data-dismiss="modal" aria-label="Close">
-                               <span aria-hidden="true">&times;</span>
-                           </button>
-                       </div>
-                       <div style="font-size: 14px; color: black;" class="modal-body">
-                           <table class="table">
-                               <thead class="thead-dark">
-                                   <tr>
-                                       <th scope="col">#</th>
-                                       <th style="color: green;" scope="col">
-                                           San Cristobal Amatlan
-                                       </th>
-                                       <th style="color: green;" scope="col">
-                                           Referencia</th>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL PUNTOS DE VENTA -->
+        <div class="modal fade" id="compra" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 style="text-align:center; color: black" class="modal-title" id="exampleModalLabel">
+                            <strong>PUNTOS DE VENTA</strong>
+                        </h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div style="font-size: 14px; color: black;" class="modal-body">
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th style="color: green;" scope="col">
+                                        San Cristobal Amatlan
+                                    </th>
+                                    <th style="color: green;" scope="col">
+                                        Referencia</th>
 
-                                   </tr>
-                               </thead>
-                               <tbody>
-                                   <tr>
-                                       <th scope="row">1</th>
-                                       <td><strong>Miscelanea San
-                                               Cristobal</strong></td>
-                                       <td>La Cruz</td>
-                                   </tr>
-                                   <tr>
-                                       <th scope="row">2</th>
-                                       <td><strong>Pasteleria y
-                                               Pizzeria</strong></td>
-                                       <td>Calle Libertad</td>
-                                   </tr>
-                                   <tr>
-                                       <th scope="row">3</th>
-                                       <td><strong>InterPaisa</strong></td>
-                                       <td>Calle santo domingo #3</td>
-                                   </tr>
-                               </tbody>
-                           </table>
-                           <table class="table">
-                               <thead class="thead-dark">
-                                   <tr>
-                                       <th scope="col">#</th>
-                                       <th style="color: green;" scope="col">
-                                           San Agustin Mixtepec
-                                       </th>
-                                       <th style="color: green;" scope="col">
-                                           Referencia</th>
-                                   </tr>
-                               </thead>
-                               <tbody>
-                                   <tr>
-                                       <th scope="row">1</th>
-                                       <td><strong>Miscelanea El
-                                               Changarrito</strong></td>
-                                       <td>Centro al lado del auditorio</td>
-                                   </tr>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td><strong>Miscelanea San
+                                            Cristobal</strong></td>
+                                    <td>La Cruz</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td><strong>Pasteleria y
+                                            Pizzeria</strong></td>
+                                    <td>Calle Libertad</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td><strong>InterPaisa</strong></td>
+                                    <td>Calle santo domingo #3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th style="color: green;" scope="col">
+                                        San Agustin Mixtepec
+                                    </th>
+                                    <th style="color: green;" scope="col">
+                                        Referencia</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td><strong>Miscelanea El
+                                            Changarrito</strong></td>
+                                    <td>Centro al lado del auditorio</td>
+                                </tr>
 
-                               </tbody>
-                           </table>
-                           <h3 style="text-align:center; color: black; padding-top: 30px"
-                           class="modal-title" id="exampleModalLabel">
-                           <strong>REDES WIFI INTERPAISA</strong>
-                       </h3>
-                           <p style="text-align: center; font-size: 13; padding-top: 20px; color: black;">Conoce nuestras redes wifi para fichas, conectactate en
-                           cualquiera de ellas con una sola ficha</p>
-                         
+                            </tbody>
+                        </table>
+                        <h3 style="text-align:center; color: black; padding-top: 30px" class="modal-title"
+                            id="exampleModalLabel">
+                            <strong>REDES WIFI INTERPAISA</strong>
+                        </h3>
+                        <p style="text-align: center; font-size: 13; padding-top: 20px; color: black;">Conoce nuestras
+                            redes wifi para fichas, conectactate en
+                            cualquiera de ellas con una sola ficha</p>
 
-                           <p>
-                               <!-- <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a> -->
-                               <!-- <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample">Toggle second element</button> -->
-                               <button style="background-color: #22be5b;" class="btn btn-success btn-block" type="button"
-                                   data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false"
-                                   aria-controls="multiCollapseExample1"><strong>San Cristobal Amatlan</strong></button>
-                           </p>
-                           <div class="row">
-                               <div class="col">
-                                   <div class="collapse multi-collapse" id="multiCollapseExample1">
-                                       <div class="card card-body">
-                                           <table class="table">
-                                               <thead class="thead-dark">
-                                                   <tr>                                                                                                                                                                                            
-                                                       <th style="color: green; text-align: center;" scope="col">REDES DISPONIBLES</th>
-   
-                                                   </tr>
-                                               </thead>
-                                               <tbody align="center"> 
-                                                   <tr>                                                                                                
-                                                       <td><strong>INTERPAISA X FICHAS "951 417 8801"</strong></td>                                                                                                
-                                                   </tr>
-                                                   <tr>                                                                                                
-                                                       <td><strong>INTERPAISA X FICHAS LA CRUZ</strong></td>                                                                                             
-                                                   </tr>
-                                                   <tr>                                                                                                
-                                                       <td><strong>INTERPAISA X FICHAS-Misc.SanCris</strong></td>                                                                                           
-                                                   </tr>
-                                                   <tr>                                                                                                
-                                                       <td><strong>INTERPAISA X FICHAS C. LIBERTAD</strong></td>                                                                                              
-                                                   </tr>                                                                                                                                                                                                    
-                                                       <td><strong>INTERPAISA X FICHAS PIZZAS Y POSTRES</strong></td>                                                                                              
-                                                   </tr>                                                                                      
-                                               </tbody>
-                                           </table>
-                                       </div>
-                                   </div>
-                               </div>
-                           </div>
-                           <p>
-                               <a style="background-color: #22be5b" class="btn btn-success btn-block"
-                                   data-toggle="collapse" href="#collapseExample123" role="button" aria-expanded="false"
-                                   aria-controls="collapseExample">
-                                   <strong>San Agustin Mixtepec</strong>
-                               </a>
-                           </p>
-                           <div class="collapse" id="collapseExample123">
-                               <div class="card card-body">
-                                   <table class="table">
-                                       <thead class="thead-dark">
-                                           <tr>                                                                                                                                                                            
-                                               <th style="color: green; text-align: center;" scope="col">REDES DISPONIBLES</th>                                            
-                                           </tr>
-                                       </thead>
-                                       <tbody align="center">
-                                           <tr>                                                                                                
-                                               <td><strong>INTERPAISA X FICHAS -951 417 8801-</strong></td>                                                                                                
-                                           </tr>
-                                           <tr>                                                                                                
-                                               <td><strong>INTERPAISA X FICHAS CENTRO</strong></td>                                                                                             
-                                           </tr>
-                                       </tbody>
-                                   </table>
-                               </div>
-                           </div>
 
-                           <p>
-                       </div>
-                       <div class="modal-footer">
-                           <button style="background-color: #e94234;"
-                               type="button" class="btn btn-danger"
-                               data-dismiss="modal">Cerrar</button>
-                           <!--  <button type="button" class="btn btn-primary">Save
+                        <p>
+                            <!-- <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a> -->
+                            <!-- <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample">Toggle second element</button> -->
+                            <button style="background-color: #22be5b;" class="btn btn-success btn-block" type="button"
+                                data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false"
+                                aria-controls="multiCollapseExample1"><strong>San Cristobal Amatlan</strong></button>
+                        </p>
+                        <div class="row">
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                    <div class="card card-body">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th style="color: green; text-align: center;" scope="col">REDES
+                                                        DISPONIBLES</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody align="center">
+                                                <tr>
+                                                    <td><strong>INTERPAISA X FICHAS "951 417 8801"</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>INTERPAISA X FICHAS LA CRUZ</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>INTERPAISA X FICHAS-Misc.SanCris</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>INTERPAISA X FICHAS C. LIBERTAD</strong></td>
+                                                </tr>
+                                                <td><strong>INTERPAISA X FICHAS PIZZAS Y POSTRES</strong></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            <a style="background-color: #22be5b" class="btn btn-success btn-block"
+                                data-toggle="collapse" href="#collapseExample123" role="button" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                <strong>San Agustin Mixtepec</strong>
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample123">
+                            <div class="card card-body">
+                                <table class="table">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th style="color: green; text-align: center;" scope="col">REDES DISPONIBLES
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody align="center">
+                                        <tr>
+                                            <td><strong>INTERPAISA X FICHAS -951 417 8801-</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>INTERPAISA X FICHAS CENTRO</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <p>
+                    </div>
+                    <div class="modal-footer">
+                        <button style="background-color: #e94234;" type="button" class="btn btn-danger"
+                            data-dismiss="modal">Cerrar</button>
+                        <!--  <button type="button" class="btn btn-primary">Save
                                changes</button> -->
-                       </div>
-                   </div>
-               </div>
-           </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    
+
+    <section(whatsapp)>                
+        <div id='whatsapp-chat' class='hide'>
+            <div class='header-chat'>
+                <div align="center" class='head-home'>
+                    <h3>InterPaisa</h3>
+                    <div class='info-avatar'><img
+                            src='https://sistemadecotizaciones.files.wordpress.com/2020/08/supportmale.png' /></div>
+
+                </div>
+
+                <div class='get-new'>                    
+                    <div id='get-nama'>Servicio al cliente</div>
+
+                </div>
+            </div>
+
+            <div class='start-chat'>
+                <div class='first-msg'><span>SERVICIO DE INTERNET!</span></div>
+                <div class='first-msg'><span>¡Hola! ¿En que podemos ayudarte?</span></div>
+                <div class='blanter-msg'><textarea id='chat-input' placeholder='Escribe un mensaje' maxlength='120'
+                        row='1'></textarea>
+                    <a href='#' onclick="enviar_mensaje();" id='send-it'>Enviar</a>
+                </div>
+            </div>
+            <div id='get-number'>529534178801</div><a class='close-chat' onclick="cerrar_chat();" href='#'>×</a>
+        </div>
+
+
+        <a class='blantershow-chat' onclick="mostrar_chat();" href='#' title='Show Chat'><svg width="20"
+                viewBox="0 0 24 24">
+                <defs />
+                <path fill="#eceff1"
+                    d="M20.5 3.4A12.1 12.1 0 0012 0 12 12 0 001.7 17.8L0 24l6.3-1.7c2.8 1.5 5 1.4 5.8 1.5a12 12 0 008.4-20.3z" />
+                <path fill="#4caf50"
+                    d="M12 21.8c-3.1 0-5.2-1.6-5.4-1.6l-3.7 1 1-3.7-.3-.4A9.9 9.9 0 012.1 12a10 10 0 0117-7 9.9 9.9 0 01-7 16.9z" />
+                <path fill="#fafafa"
+                    d="M17.5 14.3c-.3 0-1.8-.8-2-.9-.7-.2-.5 0-1.7 1.3-.1.2-.3.2-.6.1s-1.3-.5-2.4-1.5a9 9 0 01-1.7-2c-.3-.6.4-.6 1-1.7l-.1-.5-1-2.2c-.2-.6-.4-.5-.6-.5-.6 0-1 0-1.4.3-1.6 1.8-1.2 3.6.2 5.6 2.7 3.5 4.2 4.2 6.8 5 .7.3 1.4.3 1.9.2.6 0 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z" />
+            </svg>
+            Chatea con nosotros</a>
+    </section>
+
     <script src="static\js\jquery-3.2.1.min.js"></script>
     <script src="static\js\jquery-migrate-3.0.0.min.js"></script>
     <script src="static\plugin\appear\jquery.appear.js"></script>
@@ -705,16 +754,41 @@
     </script>
     $(endif)
     <script>
-      $("#menu-toggle").click(function (e) {
-          e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
-      });
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
     </script>
     <script type="text/javascript">
-    <!--
-      document.login.username.focus();
+    < !--
+            document.login.username.focus();
     //-->
     </script>
 
-  </body>
+    <!-- script de chat de whatsapp -->
+    <script>
+        function enviar_mensaje() {
+            var a = document.getElementById("chat-input");
+            if ("" != a.value) {
+                var b = document.getElementById("get-number").innerHTML, c = document.getElementById("chat-input").value, d = "https://web.whatsapp.com/send", e = b, f = "&text=" + c;
+                if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) var d = "whatsapp://send"; var g = d + "?phone=" + e + f; window.open(g, "_blank");
+            }
+        }
+
+        const whatsapp_chat = document.getElementById("whatsapp-chat");
+
+        function cerrar_chat() {
+            whatsapp_chat.classList.add("hide");
+            whatsapp_chat.classList.remove("show");
+
+        }
+
+        function mostrar_chat() {
+            whatsapp_chat.classList.add("show");
+            whatsapp_chat.classList.remove("hide");
+        }
+    </script>
+
+</body>
+
 </html>
