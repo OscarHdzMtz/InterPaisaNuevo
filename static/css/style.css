@@ -127,7 +127,8 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 15px;
   line-height: 1.8;
-  color: #888888;
+  /* color: #888888; */
+  color: black;
   font-smoothing: antialiased;
   font-weight: 400;
   overflow-x: hidden;
@@ -180,7 +181,17 @@ img {
   border: none;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
-
+/* estilo de los botones flotantes */
+.btn1 {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  /* padding: 10px 22px; */
+  /* border-radius: 5px; */
+  border: none;
+  /* box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); */
+}
 .btn-t-white {
   border:1px solid #fff;
   color: #fff; 
@@ -1447,12 +1458,13 @@ img {
   max-width: 100%;
   margin: 0 0 20px;
 }
-
+/* estilo place older */
 .home-banner-03 .subscribe-block .form-control {
   /* height: 56px; */
   padding-left: 17px;
-  font-size: 16px;
+  font-size: 15px;
   border: none;
+  text-align: center;
 }
 .home-banner-03 .subscribe-block .form-group .btn {
   bottom: 5px;
@@ -1460,8 +1472,13 @@ img {
   height: 46px;
   box-shadow: none;
 }
+
+/* Estilo de etiquetas */
 .home-banner-03 .subscribe-block label {
-  color: rgba(255,255,255,.5);
+  /* color: rgba(255,255,255,.5); */
+  color: black;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 @media(max-width: 767px){

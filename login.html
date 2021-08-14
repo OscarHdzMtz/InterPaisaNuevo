@@ -80,7 +80,7 @@
                                                 <label for="inputUser" class="form-label">Usuario</label>
                                                 <div class="md-form-line-wrap">
                                                     <input id="inputUser" type="text" name="username"
-                                                        placeholder="Usuario" class="form-control" autofocus required>
+                                                        placeholder="Ingrese su Usuario" class="form-control" autofocus required>
                                                 </div>
                                             </div>
                                         </div>
@@ -89,7 +89,7 @@
                                                 <label for="inputPassword" class="form-label">Contraseña</label>
                                                 <div class="md-form-line-wrap">
                                                     <input id="inputPassword" type="password" name="password"
-                                                        placeholder="Contraseña" class="form-control" required>
+                                                        placeholder="Ingrese su Contraseña" class="form-control" required>
                                                 </div>
                                             </div>
                                         </div>
@@ -105,7 +105,7 @@
                                         <div class="col-md-12">
                                             <button type="submit" class="btn btn-block btn-light"><span
                                                     class="btn-elem-wrap"><span class="text"
-                                                        style="color: darkblue">LOGIN</span></span></button>
+                                                        style="color: darkblue">INGRESAR</span></span></button>
                                         </div>
                                     </div>
                                 </form>
@@ -135,6 +135,33 @@
                 <div class="col-lg-4 col-md-6 m-15px-tb">
                     <div class="feature-box-02 text-center">
                         <div class="icon theme-after">
+                            <i class="icon-home theme-bg"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h5 class="font-alt dark-color">Internet Residencial para casa</h5>
+                            <p>Contrata con nosotros internet para tu casa</p>
+                        </div>
+                        <a class="link yellow-bg-after" href="#contact"><i class="yellow-bg ti-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 m-15px-tb">
+                    <div class="feature-box-02 text-center">
+                        <div class="icon theme-after">
+                            <i class="icon-shop theme-bg"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h5 class="font-alt dark-color">Compra aqui tu ficha</h5>
+                            <p>Compra tu ficha en cualquiera de estos lugares</p>
+                        </div>
+                        <a class="link yellow-bg-after" data-toggle="modal" data-target="#compra"><i
+                                class="yellow-bg ti-arrow-right"></i></a>
+                    </div>
+                </div>  
+                  
+                <div class="col-lg-4 col-md-6 m-15px-tb">
+                    $(if trial == 'yes')
+                    <div class="feature-box-02 text-center">
+                        <div class="icon theme-after">
                             <i class="icon-signal theme-bg"></i>
                         </div>
                         <div class="feature-content">
@@ -146,83 +173,62 @@
                             Probar
                         </button>
                     </div>
+                </div>  
+          <!--       $(endif) $(if error)
+                <div class="alert alert-danger">
+                    <strong>$(error)</strong>
                 </div>
-                <!--modal de confirmacion de gratis  -->
-                <div>
-                    <div class="modal fade" id="confirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 style="text-align: center" class="modal-title" id="confirm">
-                                        <strong>PATROCINADO POR
-                                            INTERPAISA</strong>
-                                    </h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div style="text-align:center" class="modal-body">
-                                    <div align="center">
-                                        <img src="static/img/Success.png" style="padding-bottom: 20px;">
-                                        <BR></BR>
+                $(endif)  -->
+                    <!--modal de confirmacion de gratis  -->
+                    <div>
+                        <div class="modal fade" id="confirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 style="text-align: center" class="modal-title" id="confirm">
+                                            <strong>PATROCINADO POR
+                                                INTERPAISA</strong>
+                                        </h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
                                     </div>
-                                    <h4> <strong>!Disfrute de sus 8 minutos
-                                            gratis!</strong> </h4>
-                                    <p>Pasando los 8 minutos podra volver
-                                        <br> a conectarse <strong>GRATIS</strong> hasta despues de 1
-                                        dia
-                                    </p>
-                                    <div style="color: black; font-size: 12px;">
-                                        Visitanos en nuestra pagina de
-                                        facebook <a href="">InterPaisaWisp</a></div>
-                                    <br><br>
-
-                                </div>
-
-                                <div class="modal-footer">
-                                    <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)"
-                                        class="btn btn-success btn-block btn-lg">Conectar</a>
-                                    <!--  <button type="button" class="btn btn-primary">Save
-                    changes</button> -->
+                                    <div style="text-align:center" class="modal-body">
+                                        <div align="center">
+                                            <img src="static/img/Success.png" style="padding-bottom: 20px;">
+                                            <BR></BR>
+                                        </div>
+                                        <h4> <strong>!Disfrute de sus 8 minutos
+                                                gratis!</strong> </h4>
+                                        <p>Pasando los 8 minutos podra volver
+                                            <br> a conectarse <strong>GRATIS</strong> hasta despues de 1
+                                            dia
+                                        </p>
+                                        <div style="color: black; font-size: 12px;">
+                                            Visitanos en nuestra pagina de
+                                            facebook <a href="">InterPaisaWisp</a></div>
+                                        <br><br>
+    
+                                    </div>
+    
+                                    <div class="modal-footer">
+                                        <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)"
+                                            class="btn btn-success btn-block btn-lg">Conectar</a>
+                                        <!--  <button type="button" class="btn btn-primary">Save
+                        changes</button> -->
+                                    </div>
+                                    $(endif) $(if error)
+                                    <div class="alert alert-danger">
+                                        <strong>$(error)</strong>
+                                    </div>
+                                    $(endif)
                                 </div>
                             </div>
                         </div>
+    
                     </div>
-
-                </div>
-                <!-- din del modal de confirmacion -->
-
-                <div class="col-lg-4 col-md-6 m-15px-tb">
-                    <div class="feature-box-02 text-center">
-                        <div class="icon theme-after">
-                            <i class="icon-shop theme-bg"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h5 class="font-alt dark-color">Compra aqui tu ficha</h5>
-                            <p>COmpra tu ficha en cualquira de estos lugares</p>
-                        </div>
-                        <a class="link yellow-bg-after" data-toggle="modal" data-target="#compra"><i
-                                class="yellow-bg ti-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 m-15px-tb">
-                    <div class="feature-box-02 text-center">
-                        <div class="icon theme-after">
-                            <i class="icon-home theme-bg"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h5 class="font-alt dark-color">Internet Residencial para casa</h5>
-                            <p>Contrata con nosotros internet para tu casa</p>
-                        </div>
-                        <a class="link yellow-bg-after" href="#contact"><i class="yellow-bg ti-arrow-right"></i></a>
-                    </div>
-                </div>
-
-            </div>
-            </div>
-            </div>
+                    <!-- din del modal de confirmacion -->                                                    
         </section>
 
 
@@ -242,7 +248,7 @@
         <div class="efect">
             <div class="container-icons">
                 <div>
-                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#precios">
+                    <button type="button" class="btn1 btn-link" data-toggle="modal" data-target="#precios">
                         <div class="row-icon icon1">
                             <h4>Precios</h4><label class="icon-ticket label1"></label>
                         </div>
@@ -250,7 +256,7 @@
                 </div>
                 <!-- <a href=""> -->
                 <div>
-                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#trabajemos">
+                    <button type="button" class="btn1 btn-link" data-toggle="modal" data-target="#trabajemos">
                         <div class="row-icon icon2">
                             <h4>Trabajemos</h4><label class="icon-tumblr-with-circle label2"></label>
 
@@ -260,7 +266,7 @@
                 </div>
 
                 <div>
-                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#compra">
+                    <button type="button" class="btn1 btn-link" data-toggle="modal" data-target="#compra">
                         <!-- <a href=""> -->
                         <div class="row-icon icon3">
                             <h4>CompraAqui</h4><label class="icon-arrow-with-circle-down label3"></label>
@@ -270,7 +276,7 @@
                 </div>
 
                 <div>
-                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#nosotros">
+                    <button type="button" class="btn1 btn-link" data-toggle="modal" data-target="#nosotros">
                         <!-- <a href=""> -->
                         <div class="row-icon icon4">
                             <h4>Nosotros</h4><label class="icon-info-with-circle label4"></label>
@@ -316,7 +322,7 @@
                                     <div class="collapse multi-collapse" id="multiCollapseExample1">
                                         <div class="card card-body">
                                             <table class="table">
-                                                <thead class="thead-dark">
+                                                <thead >
                                                     <tr>
                                                         <th scope="col">#</th>
                                                         <th style="color: green;" scope="col">Plan T/Corrido
@@ -372,7 +378,7 @@
                             <div class="collapse" id="collapseExample">
                                 <div class="card card-body">
                                     <table class="table">
-                                        <thead class="thead-dark">
+                                        <thead >
                                             <tr>
                                                 <th scope="col">#</th>
                                                 <th style="color: green;" scope="col">Plan T/Corrido
@@ -551,7 +557,7 @@
                     </div>
                     <div style="font-size: 14px; color: black;" class="modal-body">
                         <table class="table">
-                            <thead class="thead-dark">
+                            <thead>
                                 <tr>
                                     <th scope="col">#</th>
                                     <th style="color: green;" scope="col">
@@ -565,25 +571,29 @@
                             <tbody>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td><strong>Miscelanea San
-                                            Cristobal</strong></td>
-                                    <td>La Cruz</td>
+                                    <td><strong>InterPaisa</strong></td>
+                                    <td>Calle santo domingo #3</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
-                                    <td><strong>Pasteleria y
-                                            Pizzeria</strong></td>
+                                    <td><strong>Pizzas y Micheladas</strong></td>
                                     <td>Calle Libertad</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">3</th>
-                                    <td><strong>InterPaisa</strong></td>
-                                    <td>Calle santo domingo #3</td>
+                                    <td><strong>Xbox Videojuegos</strong></td>
+                                    <td>Detrás del municipio</td>
                                 </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td><strong>café la alberca</strong></td>
+                                    <td>Cerca del puente</td>
+                                </tr>
+                        
                             </tbody>
                         </table>
                         <table class="table">
-                            <thead class="thead-dark">
+                            <thead>
                                 <tr>
                                     <th scope="col">#</th>
                                     <th style="color: green;" scope="col">
@@ -598,7 +608,7 @@
                                     <th scope="row">1</th>
                                     <td><strong>Miscelanea El
                                             Changarrito</strong></td>
-                                    <td>Centro al lado del auditorio</td>
+                                    <td>Centro, al lado del auditorio</td>
                                 </tr>
 
                             </tbody>
@@ -624,7 +634,7 @@
                                 <div class="collapse multi-collapse" id="multiCollapseExample1">
                                     <div class="card card-body">
                                         <table class="table">
-                                            <thead class="thead-dark">
+                                            <thead>
                                                 <tr>
                                                     <th style="color: green; text-align: center;" scope="col">REDES
                                                         DISPONIBLES</th>
@@ -634,12 +644,9 @@
                                             <tbody align="center">
                                                 <tr>
                                                     <td><strong>INTERPAISA X FICHAS "951 417 8801"</strong></td>
-                                                </tr>
+                                                </tr>                                                
                                                 <tr>
-                                                    <td><strong>INTERPAISA X FICHAS LA CRUZ</strong></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><strong>INTERPAISA X FICHAS-Misc.SanCris</strong></td>
+                                                    <td><strong>INTERPAISA X FICHAS-xbox videojuegos</strong></td>
                                                 </tr>
                                                 <tr>
                                                     <td><strong>INTERPAISA X FICHAS C. LIBERTAD</strong></td>
@@ -662,7 +669,7 @@
                         <div class="collapse" id="collapseExample123">
                             <div class="card card-body">
                                 <table class="table">
-                                    <thead class="thead-dark">
+                                    <thead>
                                         <tr>
                                             <th style="color: green; text-align: center;" scope="col">REDES DISPONIBLES
                                             </th>
